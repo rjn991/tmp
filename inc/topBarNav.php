@@ -22,11 +22,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=categories">Topic Categories</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=about">About</a></li>
                         <?php if($_settings->userdata('id') != '' && $_settings->userdata('type') == 2): ?>
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts">My Posts</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./?p=posts/manage_post"><i class="far fa-plus-square"></i> Add Post</a></li>
                         <?php endif; ?>
                     </ul>
                     <div class="d-flex align-items-center">
@@ -45,8 +42,7 @@
                         </div>
                         <?php else: ?>
                         <a class="font-weight-bolder text-light pr-3 mx-2 text-decoration-none border-right" href="./login.php">Login</a>
-                        <a class="font-weight-bolder text-light pr-3 mx-2 text-decoration-none border-right" href="./register.php">Register</a>
-                        <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./admin">Admin Login</a>
+                        <a class="font-weight-bolder text-light pr-3 mx-2 text-decoration-none" href="./register.php">Register</a>
                         <?php endif; ?>
                     </div>
                 </div>
